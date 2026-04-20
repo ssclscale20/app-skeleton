@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   Brand tokens
+   Change these two values to re-theme the entire dashboard.
+   Values are RGB triplets (no commas) so Tailwind can apply opacity modifiers.
+
+   Examples:
+     Indigo:      --accent: 79 70 229;   --accent-foreground: 255 255 255;
+     Emerald:     --accent: 5 150 105;   --accent-foreground: 255 255 255;
+     Rose:        --accent: 225 29 72;   --accent-foreground: 255 255 255;
+   --------------------------------------------------------------------------- */
+:root {
+  --accent: 15 23 42;            /* slate-900 */
+  --accent-foreground: 255 255 255;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
